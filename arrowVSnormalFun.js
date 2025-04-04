@@ -79,4 +79,15 @@ function variadicFunction() {
 
 variadicFunction(10, 20, 30, 40);
 
+//we can call a normal function like a constructor function
 
+function Admin(name) {
+  this.name = name;
+  console.log(this.name);
+}
+
+var lokesh = new Admin("lokesh");
+
+console.log(lokesh.name); //lokesh
+
+//
