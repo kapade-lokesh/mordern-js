@@ -1,6 +1,8 @@
 //curring
-function curring() {
-  console.log(new Date().toLocaleDateString());
+function add(a){
+    return function (b){
+        return a+b;
+    }
 }
 
-curring();
+console.log(add(10)(20));
